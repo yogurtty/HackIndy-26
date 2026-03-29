@@ -12,8 +12,8 @@ const router  = express.Router();
 const jwt     = require('jsonwebtoken');
 const User    = require('../models/User');
 const DailyLog = require('../models/DailyLog');
-const { generateInterviewQuestions } = require('../services/GeminiService');
-const { generateVoiceFeedback }      = require('../services/ElevenLabsService');
+const { generateInterviewQuestions } = require('../services/geminiService');
+const { generateVoiceFeedback }      = require('../services/elevenLabsService');
 const { processAnswer, checkLevelUp } = require('../services/pointsEngine');
 
 // ── Auth middleware ─────────────────────────────────────────────────────────
